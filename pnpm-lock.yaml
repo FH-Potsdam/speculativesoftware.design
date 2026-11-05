@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       astro:
-        specifier: ^7.4.5
+        specifier: 7.4.5
         version: 7.4.5(yaml@2.9.1)
 
 packages:

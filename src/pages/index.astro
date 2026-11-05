@@ -1,16 +1,37 @@
 ---
+import DefaultLayout from "../layouts/default.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<DefaultLayout title="speculativesoftware.design">
+	<main class="pulse">
+		<h1>speculativesoftware.design</h1>
+		<p>tbd...</p>
+	</main>
+</DefaultLayout>
+
+<style>
+	main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		opacity: 1;
+	}
+
+	.pulse {
+		animation: pulse 10s infinite;
+	}
+
+	@keyframes pulse {
+		0% {
+			opacity: 0.9;
+		}
+		50% {
+			opacity: 0.5;
+		}
+		100% {
+			opacity: 0.9;
+		}
+	}
+</style>
