@@ -3,13 +3,86 @@ import DefaultLayout from "../layouts/default.astro";
 ---
 
 <DefaultLayout title="speculativesoftware.design">
+	<button class="theme-toggle" type="button" aria-pressed="false">
+		Dark mode
+	</button>
 	<main class="pulse">
-		<h1>speculativesoftware.design</h1>
-		<p>tbd...</p>
+		<div class="intro">
+			<h1>speculativesoftware.design</h1>
+			<p>tbd...</p>
+		</div>
+		<div class="ascii-container">
+			<pre
+				class="ascii-art"
+				role="img"
+				aria-label="Speculative software design"
+			>  ██████  ██▓███  ▓█████  ▄████▄   █    ██  ██▓    ▄▄▄     ▄▄▄█████▓ ██▓ ██▒   █▓▓█████
+▒██    ▒ ▓██░  ██▒▓█   ▀ ▒██▀ ▀█   ██  ▓██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒▓██▒▓██░   █▒▓█   ▀
+░ ▓██▄   ▓██░ ██▓▒▒███   ▒▓█    ▄ ▓██  ▒██░▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░▒██▒ ▓██  █▒░▒███
+  ▒   ██▒▒██▄█▓▒ ▒▒▓█  ▄ ▒▓▓▄ ▄██▒▓▓█  ░██░▒██░   ░██▄▄▄▄██░ ▓██▓ ░ ░██░  ▒██ █░░▒▓█  ▄
+▒██████▒▒▒██▒ ░  ░░▒████▒▒ ▓███▀ ░▒▒█████▓ ░██████▒▓█   ▓██▒ ▒██▒ ░ ░██░   ▒▀█░  ░▒████▒
+▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░░ ▒░ ░░ ░▒ ▒  ░░▒▓▒ ▒ ▒ ░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░   ░▓     ░ ▐░  ░░ ▒░ ░
+░ ░▒  ░ ░░▒ ░      ░ ░  ░  ░  ▒   ░░▒░ ░ ░ ░ ░ ▒  ░ ▒   ▒▒ ░   ░     ▒ ░   ░ ░░   ░ ░  ░
+░  ░  ░  ░░          ░   ░         ░░░ ░ ░   ░ ░    ░   ▒    ░       ▒ ░     ░░     ░
+      ░              ░  ░░ ░         ░         ░  ░     ░  ░         ░        ░     ░  ░
+                         ░                                                   ░
+
+  ██████  ▒█████    █████▒▄▄▄█████▓ █     █░ ▄▄▄       ██▀███  ▓█████
+▒██    ▒ ▒██▒  ██▒▓██   ▒ ▓  ██▒ ▓▒▓█░ █ ░█░▒████▄    ▓██ ▒ ██▒▓█   ▀
+░ ▓██▄   ▒██░  ██▒▒████ ░ ▒ ▓██░ ▒░▒█░ █ ░█ ▒██  ▀█▄  ▓██ ░▄█ ▒▒███
+  ▒   ██▒▒██   ██░░▓█▒  ░ ░ ▓██▓ ░ ░█░ █ ░█ ░██▄▄▄▄██ ▒██▀▀█▄  ▒▓█  ▄
+▒██████▒▒░ ████▓▒░░▒█░      ▒██▒ ░ ░░██▒██▓  ▓█   ▓██▒░██▓ ▒██▒░▒████▒
+▒ ▒▓▒ ▒ ░░ ▒░▒░▒░  ▒ ░      ▒ ░░   ░ ▓░▒ ▒   ▒▒   ▓▒█░░ ▒▓ ░▒▓░░░ ▒░ ░
+░ ░▒  ░ ░  ░ ▒ ▒░  ░          ░      ▒ ░ ░    ▒   ▒▒ ░  ░▒ ░ ▒░ ░ ░  ░
+░  ░  ░  ░ ░ ░ ▒   ░ ░      ░        ░   ░    ░   ▒     ░░   ░    ░
+      ░      ░ ░                       ░          ░  ░   ░        ░  ░
+
+
+▓█████▄ ▓█████   ██████  ██▓  ▄████  ███▄    █
+▒██▀ ██▌▓█   ▀ ▒██    ▒ ▓██▒ ██▒ ▀█▒ ██ ▀█   █
+░██   █▌▒███   ░ ▓██▄   ▒██▒▒██░▄▄▄░▓██  ▀█ ██▒
+░▓█▄   ▌▒▓█  ▄   ▒   ██▒░██░░▓█  ██▓▓██▒  ▐▌██▒
+░▒████▓ ░▒████▒▒██████▒▒░██░░▒▓███▀▒▒██░   ▓██░
+ ▒▒▓  ▒ ░░ ▒░ ░▒ ▒▓▒ ▒ ░░▓   ░▒   ▒ ░ ▒░   ▒ ▒
+ ░ ▒  ▒  ░ ░  ░░ ░▒  ░ ░ ▒ ░  ░   ░ ░ ░░   ░ ▒░
+ ░ ░  ░    ░   ░  ░  ░   ▒ ░░ ░   ░    ░   ░ ░
+   ░       ░  ░      ░   ░        ░          ░
+ ░</pre>
+		</div>
 	</main>
 </DefaultLayout>
 
+<script>
+	const toggle = document.querySelector<HTMLButtonElement>(".theme-toggle");
+
+	toggle?.addEventListener("click", () => {
+		const dark = toggle.getAttribute("aria-pressed") !== "true";
+		document.documentElement.dataset.theme = dark ? "dark" : "light";
+		toggle.setAttribute("aria-pressed", String(dark));
+	});
+</script>
+
 <style>
+	:global(:root) {
+		color-scheme: light;
+	}
+
+	:global(:root[data-theme="dark"]) {
+		color-scheme: dark;
+	}
+
+	:global(body) {
+		background-color: Canvas;
+		color: CanvasText;
+	}
+
+	.theme-toggle {
+		position: absolute;
+		z-index: 1;
+		top: 1rem;
+		right: 1rem;
+	}
+
 	main {
 		display: flex;
 		flex-direction: column;
@@ -18,9 +91,39 @@ import DefaultLayout from "../layouts/default.astro";
 		height: 100vh;
 		opacity: 1;
 	}
+	.intro {
+		text-align: center;
+	}
+
 	h1 {
 		font-size: clamp(1rem, 5vw, 6rem);
 		white-space: nowrap;
+	}
+
+	:global([data-theme="dark"]) .intro {
+		display: none;
+	}
+
+	:global([data-theme="dark"]) .ascii-container {
+		display: block;
+	}
+
+	.ascii-container {
+		display: none;
+		container-type: inline-size;
+		width: 100%;
+		min-width: 0;
+	}
+
+	.ascii-art {
+		margin: 0;
+		white-space: pre;
+		font-family: "Courier New", monospace;
+		/* Sized for your artwork's longest line; capped at 16px. */
+		font-size: min(16px, 1.8cqw);
+		line-height: 1;
+		letter-spacing: 0;
+		font-variant-ligatures: none;
 	}
 
 	.pulse {
