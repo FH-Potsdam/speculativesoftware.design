@@ -3,13 +3,175 @@ import DefaultLayout from "../layouts/default.astro";
 ---
 
 <DefaultLayout title="speculativesoftware.design">
+	<button class="theme-toggle" type="button" role="switch" aria-checked="false">
+		<span class="switch-track" aria-hidden="true">
+			<span class="switch-thumb"></span>
+		</span>
+		Dark mode
+	</button>
 	<main class="pulse">
-		<h1>speculativesoftware.design</h1>
-		<p>tbd...</p>
+		<div class="intro">
+			<h1>speculativesoftware.design</h1>
+			<p>tbd...</p>
+		</div>
+		<div class="ascii-container" role="img" aria-label="Speculative software design">
+			<pre class="ascii-art" aria-hidden="true">  ██████  ██▓███  ▓█████  ▄████▄   █    ██  ██▓    ▄▄▄     ▄▄▄█████▓ ██▓ ██▒   █▓▓█████
+▒██    ▒ ▓██░  ██▒▓█   ▀ ▒██▀ ▀█   ██  ▓██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒▓██▒▓██░   █▒▓█   ▀
+░ ▓██▄   ▓██░ ██▓▒▒███   ▒▓█    ▄ ▓██  ▒██░▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░▒██▒ ▓██  █▒░▒███
+  ▒   ██▒▒██▄█▓▒ ▒▒▓█  ▄ ▒▓▓▄ ▄██▒▓▓█  ░██░▒██░   ░██▄▄▄▄██░ ▓██▓ ░ ░██░  ▒██ █░░▒▓█  ▄
+▒██████▒▒▒██▒ ░  ░░▒████▒▒ ▓███▀ ░▒▒█████▓ ░██████▒▓█   ▓██▒ ▒██▒ ░ ░██░   ▒▀█░  ░▒████▒
+▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░░ ▒░ ░░ ░▒ ▒  ░░▒▓▒ ▒ ▒ ░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░   ░▓     ░ ▐░  ░░ ▒░ ░
+░ ░▒  ░ ░░▒ ░      ░ ░  ░  ░  ▒   ░░▒░ ░ ░ ░ ░ ▒  ░ ▒   ▒▒ ░   ░     ▒ ░   ░ ░░   ░ ░  ░
+░  ░  ░  ░░          ░   ░         ░░░ ░ ░   ░ ░    ░   ▒    ░       ▒ ░     ░░     ░
+      ░              ░  ░░ ░         ░         ░  ░     ░  ░         ░        ░     ░  ░
+                         ░                                                   ░</pre>
+			<pre class="ascii-art" aria-hidden="true">  ██████  ▒█████    █████▒▄▄▄█████▓ █     █░ ▄▄▄       ██▀███  ▓█████
+▒██    ▒ ▒██▒  ██▒▓██   ▒ ▓  ██▒ ▓▒▓█░ █ ░█░▒████▄    ▓██ ▒ ██▒▓█   ▀
+░ ▓██▄   ▒██░  ██▒▒████ ░ ▒ ▓██░ ▒░▒█░ █ ░█ ▒██  ▀█▄  ▓██ ░▄█ ▒▒███
+  ▒   ██▒▒██   ██░░▓█▒  ░ ░ ▓██▓ ░ ░█░ █ ░█ ░██▄▄▄▄██ ▒██▀▀█▄  ▒▓█  ▄
+▒██████▒▒░ ████▓▒░░▒█░      ▒██▒ ░ ░░██▒██▓  ▓█   ▓██▒░██▓ ▒██▒░▒████▒
+▒ ▒▓▒ ▒ ░░ ▒░▒░▒░  ▒ ░      ▒ ░░   ░ ▓░▒ ▒   ▒▒   ▓▒█░░ ▒▓ ░▒▓░░░ ▒░ ░
+░ ░▒  ░ ░  ░ ▒ ▒░  ░          ░      ▒ ░ ░    ▒   ▒▒ ░  ░▒ ░ ▒░ ░ ░  ░
+░  ░  ░  ░ ░ ░ ▒   ░ ░      ░        ░   ░    ░   ▒     ░░   ░    ░
+      ░      ░ ░                       ░          ░  ░   ░        ░  ░</pre>
+			<pre class="ascii-art" aria-hidden="true">▓█████▄ ▓█████   ██████  ██▓  ▄████  ███▄    █
+▒██▀ ██▌▓█   ▀ ▒██    ▒ ▓██▒ ██▒ ▀█▒ ██ ▀█   █
+░██   █▌▒███   ░ ▓██▄   ▒██▒▒██░▄▄▄░▓██  ▀█ ██▒
+░▓█▄   ▌▒▓█  ▄   ▒   ██▒░██░░▓█  ██▓▓██▒  ▐▌██▒
+░▒████▓ ░▒████▒▒██████▒▒░██░░▒▓███▀▒▒██░   ▓██░
+ ▒▒▓  ▒ ░░ ▒░ ░▒ ▒▓▒ ▒ ░░▓   ░▒   ▒ ░ ▒░   ▒ ▒
+ ░ ▒  ▒  ░ ░  ░░ ░▒  ░ ░ ▒ ░  ░   ░ ░ ░░   ░ ▒░
+ ░ ░  ░    ░   ░  ░  ░   ▒ ░░ ░   ░    ░   ░ ░
+   ░       ░  ░      ░   ░        ░          ░
+ ░</pre>
+		</div>
 	</main>
 </DefaultLayout>
 
+<script>
+	const toggle = document.querySelector<HTMLButtonElement>(".theme-toggle");
+	const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+	const artwork = Array.from(
+		document.querySelectorAll<HTMLPreElement>(".ascii-art"),
+		(element) => {
+			const text = element.textContent ?? "";
+			const lines = text.split("\n");
+			return {
+				element,
+				text,
+				lines,
+				width: Math.max(...lines.map((line) => line.length)),
+			};
+		},
+	);
+	let frame = 0;
+
+	function restoreArtwork() {
+		cancelAnimationFrame(frame);
+		for (const { element, text } of artwork) {
+			element.textContent = text;
+		}
+	}
+
+	function playRain() {
+		restoreArtwork();
+		if (reducedMotion.matches) return;
+
+		const started = performance.now();
+		const delays = artwork.map(({ width }) =>
+			Array.from({ length: width }, () => Math.random() * 0.35),
+		);
+
+		function draw(now: number) {
+			const progress = (now - started) / 1400;
+			if (progress >= 1) {
+				restoreArtwork();
+				return;
+			}
+
+			for (const [index, { element, lines, width }] of artwork.entries()) {
+				element.textContent = lines
+					.map((line, row) =>
+						Array.from({ length: width }, (_, column) => {
+							const delay = delays[index][column];
+							const head =
+								((progress - delay) / (1 - delay)) * (lines.length + 4);
+							const distance = Math.floor(head) - row;
+							if (distance >= 4) return line[column] ?? " ";
+							return distance >= 0 ? "█▓▒░"[distance] : " ";
+						}).join(""),
+					)
+					.join("\n");
+			}
+			frame = requestAnimationFrame(draw);
+		}
+
+		draw(started);
+	}
+
+	toggle?.addEventListener("click", () => {
+		const dark = toggle.getAttribute("aria-checked") !== "true";
+		document.documentElement.dataset.theme = dark ? "dark" : "light";
+		toggle.setAttribute("aria-checked", String(dark));
+		if (dark) playRain();
+		else restoreArtwork();
+	});
+
+	reducedMotion.addEventListener("change", () => {
+		if (reducedMotion.matches) restoreArtwork();
+	});
+</script>
+
 <style>
+	:global(:root) {
+		color-scheme: light;
+	}
+
+	:global(:root[data-theme="dark"]) {
+		color-scheme: dark;
+	}
+
+	:global(body) {
+		background-color: Canvas;
+		color: CanvasText;
+	}
+
+	.theme-toggle {
+		position: absolute;
+		z-index: 1;
+		top: 1rem;
+		right: 1rem;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0.25rem;
+		border: 0;
+		background: none;
+		color: inherit;
+		font: inherit;
+		cursor: pointer;
+	}
+
+	.switch-track {
+		display: flex;
+		align-items: center;
+		width: 2.75rem;
+		height: 1.5rem;
+		padding: 0.125rem;
+		border: 1px solid currentColor;
+	}
+
+	.switch-thumb {
+		width: 1rem;
+		height: 1rem;
+		background-color: currentColor;
+		transition: transform 150ms;
+	}
+
+	.theme-toggle[aria-checked="true"] .switch-thumb {
+		transform: translateX(calc(1.5rem - 2px));
+	}
+
 	main {
 		display: flex;
 		flex-direction: column;
@@ -18,13 +180,56 @@ import DefaultLayout from "../layouts/default.astro";
 		height: 100vh;
 		opacity: 1;
 	}
+	.intro {
+		text-align: center;
+	}
+
 	h1 {
 		font-size: clamp(1rem, 5vw, 6rem);
 		white-space: nowrap;
 	}
 
+	:global([data-theme="dark"]) .intro {
+		display: none;
+	}
+
+	:global([data-theme="dark"]) .ascii-container {
+		display: flex;
+	}
+
+	.ascii-container {
+		display: none;
+		container-type: inline-size;
+		flex-direction: column;
+		align-items: center;
+		gap: min(16px, 1.8cqw);
+		width: 100%;
+		min-width: 0;
+	}
+
+	.ascii-art {
+		margin: 0;
+		white-space: pre;
+		font-family: "Courier New", monospace;
+		/* Sized for your artwork's longest line; capped at 16px. */
+		font-size: min(16px, 1.8cqw);
+		line-height: 1;
+		letter-spacing: 0;
+		font-variant-ligatures: none;
+	}
+
 	.pulse {
 		animation: pulse 10s infinite;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.pulse {
+			animation: none;
+		}
+
+		.switch-thumb {
+			transition: none;
+		}
 	}
 
 	@keyframes pulse {
